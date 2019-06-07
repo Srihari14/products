@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/btn_rect_grey">
+
+            <ImageView
+                android:id="@+id/imv_product"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:scaleType="fitCenter" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_instock"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@color/tag_green"
+                    android:gravity="center"
+                    android:text="In Stock"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:ellipsize="end"
+                    android:gravity="top|start|center"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Century 24 inch 4-Panel Mealmine Moulded Door was loperm lopermlopermlopermlopermloperm"
+                    android:textColor="@color/desc"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="Rs 0.0"
+                    android:textStyle="bold"
+                    android:textColor="@color/dull_green"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reviewRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textSize="@dimen/_9sdp"
+                        android:text="@string/review_amp_rating"
+                        android:textColor="@color/black_light" />
+
+                    <TextView
+                        android:id="@+id/tv_reviewCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_9sdp"
+                        android:gravity="end"
+                        android:text="@string/review_amp_count"
+                        android:textColor="@color/black_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/home_line_grey" />
+</LinearLayout>
+

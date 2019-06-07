@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.ProductDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".activity.ProductDetailsActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <include layout="@layout/item_product_details_page_images_view" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="@string/short_description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tv_short_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="@string/short_description"
+                android:textColor="@color/desc"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Long Description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tv_long_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="@string/short_description"
+                android:textColor="@color/desc"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_reviewRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/review_amp_rating"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/tv_reviewCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/review_amp_count"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
